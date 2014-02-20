@@ -5,7 +5,7 @@ $(function(){
 
   socket.on("connect", function(){
     console.log('connected');
-    socket.emit('command', 'set_name', 'Nathan');
+    socket.emit('command', 'set_name', 'MOOS');
   });
   socket.on("gamestate", function(state){
     var GameState = JSON.parse(state);
